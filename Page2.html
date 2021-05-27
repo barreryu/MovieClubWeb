@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Watch Together!</title>
+    <link rel = "stylesheet" href="weblayout.css">
+  </head>
+  <body>
+
+    <!-- Horizontal Menu Bar -->
+    <div class = "horizontal-menu">
+      <a href = "index.html">Home Page</a>
+      <a href = "Page1.html">Ideas</a>
+      <a href = "Page3.html">Watch Movie</a>
+    </div>
+
+    <!-- Download template for movie club -->
+    <div class = "download-template">
+      There are many ways to keep up with our club! One way is to click 
+      <a href = "MovieClubSchedule - Sheet1.pdf" download = "MovieClubSchedule">here</a>
+      to download a template that you can fill out your information regarding movies; such as what you watched, what you want to watch, and so on.
+    </div>
+
+    <!-- Form fill out for movie club -->
+    <div class = "club-form">
+      <h3>Here is a form you can fill out to join the movie club!</h3>
+      <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method = "GET">
+
+        <!--Input for first name-->
+        <label for ="firstname">First Name:</label><br>
+        <input type = "text" id = "firstname" name = "firstname"><br>
+
+        <!-- Input for last name -->
+        <label for = "lastname">Last Name: </label><br>
+        <input type = "text" id = "lastname" name = "lastname"><br>
+        
+        <!-- Input for fav movie-->
+        <label for = "favmovie">Favorite Movie: </label><br>
+        <input type = "text" id ="favmovie" name = "favmovie"><br>
+
+        <!-- Check for favorite movie genres-->
+        <h4>Check boxes for your favorite movie genres!</h4>
+        <input type = "checkbox" id = "action" name = "action" value = "action">
+        <label for = "action">Action</label>
+
+        <input type = "checkbox" id = "Comedy" name = "Comedy" value = "Comedy">
+        <label for = "Comedy">Comedy</label>
+
+        <input type = "checkbox" id = "Horror" name = "Horror" value = "Horror">
+        <label for = "Horror">Horror</label><br>
+
+        <input type = "checkbox" id = "Romance" name = "Romance" value = "Romance">
+        <label for = "Romance">Romance</label>
+
+        <input type = "checkbox" id = "Drama" name = "Drama" value = "Drama">
+        <label for = "Drama">Drama</label>
+
+        <input type = "checkbox" id = "Thriller" name = "Thriller" value = "Thriller">
+        <label for = "Thriller">Thriller</label><br>
+
+        <!-- Submit Button-->
+        <button type = "submit">Submit</button>
+
+      </form>
+    </div>
+  </body>
+</html>
+
+
+

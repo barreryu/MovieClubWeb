@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(215, 236, 236);
+  }
+
+  div.horizontal-menu{
+    background-color: rgba(136, 98, 48, 0.664);
+    overflow:auto;
+    white-space: nowrap;
+  }
+
+  div.horizontal-menu a{
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+    color:white;
+    align-items: center;
+    vertical-align: middle;
+    font:monospace;
+    align-content: center;
+    position: relative;
+    justify-content: center;
+  }

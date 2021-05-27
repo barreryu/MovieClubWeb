@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MovieClubHomePage</title>
+    <link rel = "stylesheet" href="weblayout.css">
+    <style>
+      .carasoul-border{
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        max-height: 1000px;
+      }
+      img{
+        vertical-align: middle;
+      }
+      .carasoulSlide{
+        display: none;
+      }
+      .prev, .next {
+        position:absolute;
+        top: 50%;
+        color:  rgb(255, 255, 255);
+        font-size: 20px;
+        user-select: none;
+        margin-top: auto;
+        font-weight: bold;
+        width:auto;
+        padding: 30px;
+      }
+      .next{
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .overlay{
+        position: absolute;
+        opacity: 0;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <!-- Horizontal Menu Bar -->
+    <div class = "horizontal-menu">
+      <a href="Page1.html">Ideas</a>
+      <a href="Page2.html">Watch Together!</a>
+      <a href="Page3.html">Watch Movies</a>
+    </div>
+
+    <!-- Rotating Carosol/SlideShow-->
+      <div class= "carasoul-border">
+        <h1>Welcome to Movie club!</h1>
+
+        <div class="carasoulSlide">
+            <img src="seats.jpg" width="1000px" height="700px">
+            <cite>Photo taken from https://www.barrons.com/articles/the-picture-darkens-for-movie-theater-operators-1500094336</cite>
+        </div>
+
+      <div class="carasoulSlide">
+        <img src="godzillaj.jpg" width="1000px" height="700px">
+        <cite>Photo taken from https://www.tomsguide.com/news/godzilla-vs-kong-release-date-hbo-max-cast-trailer-and-reviews</cite>
+      </div>
+
+      <div class="carasoulSlide">
+        <img src="mortal.jpg" width="1000px" height="700px">
+        <cite>Photo taken from https://www.catholicnews.com/mortal-kombat/</cite>
+      </div>
+
+      <!-- Forward and Backward Buttons for Slide Show-->
+      <a class = "next" onclick = "nextslide(1)">&#10095;</a>
+      <a class = "prev" onclick = "nextslide(-1)">&#10094;</a>
+      </div>
+      <script src = "carasol.js"></script>
+  </body>
+</html>
+
+
+
+
